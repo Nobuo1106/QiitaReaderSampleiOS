@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swiftformat",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:nicklockwood/SwiftFormat.git",
+      "state" : {
+        "revision" : "1780bcdc3237633a50e4aaa97422de37e77130bd",
+        "version" : "0.52.2"
+      }
+    }
+  ],
+  "version" : 2
+}

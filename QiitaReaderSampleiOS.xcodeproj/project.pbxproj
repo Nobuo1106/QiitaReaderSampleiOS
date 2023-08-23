@@ -13,6 +13,8 @@
 		1893D2B72A960EA9007916FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893D2B52A960EA9007916FD /* Main.storyboard */; };
 		1893D2B92A960EAB007916FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1893D2B82A960EAB007916FD /* Assets.xcassets */; };
 		1893D2BC2A960EAB007916FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893D2BA2A960EAB007916FD /* LaunchScreen.storyboard */; };
+		1893D2C62A961434007916FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1893D2C52A961434007916FD /* Alamofire */; };
+		1893D2C92A961519007916FD /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 1893D2C82A961519007916FD /* SwiftFormat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1893D2C62A961434007916FD /* Alamofire in Frameworks */,
+				1893D2C92A961519007916FD /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,10 @@
 			dependencies = (
 			);
 			name = QiitaReaderSampleiOS;
+			packageProductDependencies = (
+				1893D2C52A961434007916FD /* Alamofire */,
+				1893D2C82A961519007916FD /* SwiftFormat */,
+			);
 			productName = QiitaReaderSampleiOS;
 			productReference = 1893D2AC2A960EA9007916FD /* QiitaReaderSampleiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,10 @@
 				Base,
 			);
 			mainGroup = 1893D2A32A960EA9007916FD;
+			packageReferences = (
+				1893D2C42A961434007916FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1893D2C72A961519007916FD /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+			);
 			productRefGroup = 1893D2AD2A960EA9007916FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -387,6 +399,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1893D2C42A961434007916FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1893D2C72A961519007916FD /* XCRemoteSwiftPackageReference "SwiftFormat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:nicklockwood/SwiftFormat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1893D2C52A961434007916FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893D2C42A961434007916FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1893D2C82A961519007916FD /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893D2C72A961519007916FD /* XCRemoteSwiftPackageReference "SwiftFormat" */;
+			productName = SwiftFormat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1893D2A42A960EA9007916FD /* Project object */;
 }
