@@ -25,6 +25,7 @@ DerivedData/
 
 timeline.xctimeline
 playground.xcworkspace
+Secrets.plist
 
 .build/
 

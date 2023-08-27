@@ -17,6 +17,6 @@ struct Article: Codable {
         case title
         case user
         case url
-        case date = "create_at"
+        case date = "created_at"
     }
 }

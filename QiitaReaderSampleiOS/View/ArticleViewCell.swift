@@ -20,8 +20,21 @@ class ArticleViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
+    func configure(with article: Article) {
+        self.title.text = article.title
+        self.userName.text = article.user.id
+        self.date.text = article.date
+        if let url = URL(string: article.user.imgUrl) {
+            URLSession.shared.dataTask(with: url) { (data, _, _) in
+                guard let data = data else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    self.imageView?.image = UIImage(data: data)
+                }
+            }.resume()
+        }
+    }
 }

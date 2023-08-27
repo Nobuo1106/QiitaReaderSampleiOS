@@ -19,6 +19,8 @@
 		1893D2D02A99A662007916FD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893D2CF2A99A662007916FD /* Article.swift */; };
 		1893D2D52A99B14D007916FD /* ArticleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893D2D32A99B14D007916FD /* ArticleViewCell.swift */; };
 		1893D2D62A99B14D007916FD /* ArticleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1893D2D42A99B14D007916FD /* ArticleViewCell.xib */; };
+		1893D2D92A9B2E18007916FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893D2D82A9B2E18007916FD /* NetworkManager.swift */; };
+		1893D2DB2A9B3BA3007916FD /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1893D2DA2A9B3BA3007916FD /* Secrets.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1893D2CF2A99A662007916FD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		1893D2D32A99B14D007916FD /* ArticleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewCell.swift; sourceTree = "<group>"; };
 		1893D2D42A99B14D007916FD /* ArticleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleViewCell.xib; sourceTree = "<group>"; };
+		1893D2D82A9B2E18007916FD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1893D2DA2A9B3BA3007916FD /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +72,14 @@
 		1893D2AE2A960EA9007916FD /* QiitaReaderSampleiOS */ = {
 			isa = PBXGroup;
 			children = (
+				1893D2D72A9B2DF8007916FD /* Services */,
 				1893D2D22A99AFC7007916FD /* ViewController */,
 				1893D2D12A99AF85007916FD /* View */,
 				1893D2CC2A999E21007916FD /* Model */,
 				1893D2AF2A960EA9007916FD /* AppDelegate.swift */,
 				1893D2B12A960EA9007916FD /* SceneDelegate.swift */,
 				1893D2B82A960EAB007916FD /* Assets.xcassets */,
+				1893D2DA2A9B3BA3007916FD /* Secrets.plist */,
 				1893D2BD2A960EAB007916FD /* Info.plist */,
 			);
 			path = QiitaReaderSampleiOS;
@@ -105,6 +111,14 @@
 				1893D2B32A960EA9007916FD /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1893D2D72A9B2DF8007916FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1893D2D82A9B2E18007916FD /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1893D2BC2A960EAB007916FD /* LaunchScreen.storyboard in Resources */,
+				1893D2DB2A9B3BA3007916FD /* Secrets.plist in Resources */,
 				1893D2B92A960EAB007916FD /* Assets.xcassets in Resources */,
 				1893D2B72A960EA9007916FD /* Main.storyboard in Resources */,
 				1893D2D62A99B14D007916FD /* ArticleViewCell.xib in Resources */,
@@ -213,6 +228,7 @@
 				1893D2CE2A999E34007916FD /* User.swift in Sources */,
 				1893D2D52A99B14D007916FD /* ArticleViewCell.swift in Sources */,
 				1893D2B42A960EA9007916FD /* ViewController.swift in Sources */,
+				1893D2D92A9B2E18007916FD /* NetworkManager.swift in Sources */,
 				1893D2B02A960EA9007916FD /* AppDelegate.swift in Sources */,
 				1893D2B22A960EA9007916FD /* SceneDelegate.swift in Sources */,
 				1893D2D02A99A662007916FD /* Article.swift in Sources */,
