@@ -15,7 +15,6 @@ class ArticleViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,7 +31,7 @@ class ArticleViewCell: UITableViewCell {
                     return
                 }
                 DispatchQueue.main.async {
-                    self.imageView?.image = UIImage(data: data)
+                    self.userImage?.image = UIImage(data: data)
                 }
             }.resume()
         }

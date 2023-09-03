@@ -16,13 +16,12 @@ class NetworkManager {
 
     // ベースURLの組み立て
     private var baseURL: String {
-        get {
-            if let path = Bundle.main.path(forResource: "Secrets", ofType: "plist"),
-               let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
-                return dict["BaseUrl"] as? String ?? ""
-            }
-            return ""
+
+        if let path = Bundle.main.path(forResource: "Secrets", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+            return dict["BaseUrl"] as? String ?? ""
         }
+        return ""
     }
 
     // ヘッダーの組み立て

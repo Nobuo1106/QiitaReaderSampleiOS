@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "ArticleViewCell", bundle: nil)
-        self.tableView.register(nib, forCellReuseIdentifier: "ArticleViewCell")
+        tableView.register(nib, forCellReuseIdentifier: "ArticleViewCell")
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        tableView.estimatedRowHeight = 100
+        tableView.delegate = self
+        tableView.dataSource = self
 
         fetchArticles()
     }
@@ -61,7 +61,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             fetchArticles()
         }
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
