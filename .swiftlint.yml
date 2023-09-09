@@ -8,6 +8,7 @@ disabled_rules:
 - trailing_comma
 - opening_brace
 - unused_optional_binding
+- force_cast
 
 # デフォで無効とされたルールを有効とする
 opt_in_rules:

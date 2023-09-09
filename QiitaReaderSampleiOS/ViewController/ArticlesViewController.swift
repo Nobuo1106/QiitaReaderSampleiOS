@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class ArticlesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var articles: [Article] = []
     var currentPage = 1
@@ -17,8 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "ArticleViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ArticleViewCell")
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 100
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -40,7 +38,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }
@@ -64,5 +62,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedUrl = URL(string: articles[indexPath.row].url)
+        let webViewController = UIStoryboard.webView.instantiateInitialViewController() as! WebViewController
+        webViewController.url = selectedUrl
+        webViewController.modalPresentationStyle = .fullScreen
+        self.present(webViewController, animated: true, completion: nil)
     }
 }
