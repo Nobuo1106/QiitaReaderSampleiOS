@@ -49,6 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PTG-FT-z9y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="59U-QI-ifT" secondAttribute="trailing" constant="30" id="7nx-ll-L36"/>
                             <constraint firstItem="PTG-FT-z9y" firstAttribute="centerY" secondItem="sCV-92-eJj" secondAttribute="centerY" id="8Lc-RP-NLN"/>
                             <constraint firstAttribute="trailing" secondItem="PTG-FT-z9y" secondAttribute="trailing" id="8uC-w4-9oM"/>
                             <constraint firstItem="59U-QI-ifT" firstAttribute="centerY" secondItem="sCV-92-eJj" secondAttribute="centerY" id="A7y-gw-w9k"/>
@@ -56,7 +57,7 @@
                             <constraint firstItem="sCV-92-eJj" firstAttribute="leading" secondItem="9Wg-lb-6vS" secondAttribute="leading" id="I64-FY-LDw"/>
                             <constraint firstItem="59U-QI-ifT" firstAttribute="leading" secondItem="sCV-92-eJj" secondAttribute="trailing" constant="10" id="Wja-DY-G5Y"/>
                             <constraint firstAttribute="bottom" secondItem="sCV-92-eJj" secondAttribute="bottom" id="dAG-xO-aA0"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kto-km-CUl" secondAttribute="trailing" constant="16" id="oSV-jt-yoH"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kto-km-CUl" secondAttribute="trailing" id="oSV-jt-yoH"/>
                             <constraint firstItem="59U-QI-ifT" firstAttribute="centerY" secondItem="PTG-FT-z9y" secondAttribute="centerY" id="t5N-yu-lIV"/>
                             <constraint firstItem="sCV-92-eJj" firstAttribute="top" secondItem="kto-km-CUl" secondAttribute="bottom" constant="5" id="tK5-hL-7Gx"/>
                             <constraint firstItem="kto-km-CUl" firstAttribute="leading" secondItem="9Wg-lb-6vS" secondAttribute="leading" id="z8f-3L-Dix"/>
